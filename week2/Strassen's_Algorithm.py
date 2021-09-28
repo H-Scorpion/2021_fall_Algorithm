@@ -1,3 +1,5 @@
+# code reference: https://stackoverflow.com/questions/52137431/strassens-algorithm-bug-in-python-implementation
+
 import numpy as np
 import copy
 def new_matrix(r, c):
@@ -127,6 +129,6 @@ print(f"a = {a}")
 print(f"a_noise = {a_noise}")
 print(f"b = {b}")
 
-print(f"Using Strassen's algorithm:\na*b = {strassen(a_noise, b, 4)}")
+print(f"Using Strassen's algorithm:\na_noise*b = {strassen(a_noise, b, 4)}")
 
 print(f"Using naive algorithm:\na*b = {direct_multiply(a, b)}")
